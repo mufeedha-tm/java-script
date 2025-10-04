@@ -1,0 +1,10 @@
+pre defined functions(built-in functions/native methods)
+pre defined functions are function that are provided by javascript.
+
+why we use this?
+1) Save time- no need to call from scratch
+2) increase code readiability
+3) optimized
+
+--Example--
+Math function,String function,Date function

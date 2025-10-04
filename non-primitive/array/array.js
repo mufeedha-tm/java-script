@@ -1,5 +1,6 @@
 
- //1.using array literalslet colors = ["red", "green", "blue"] ;  
+//  1.using array literals
+let colors = ["red", "green", "blue"] ;  
 console.log(colors);
 
 //2. using array constuctor

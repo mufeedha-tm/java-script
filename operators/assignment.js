@@ -1,5 +1,5 @@
 let x = 10;
-console.log("initial value of x:", x);
+console.log("initial value of x: ", x);
 
 //using +=
 x += 5;
