@@ -1,2 +1,2 @@
 event is an action or occurence that happen to the browser.
-even handling- writing a js code that will run when an specific event occurs.
+event handling- writing a js code that will run when an specific event occurs.

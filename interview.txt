@@ -1,0 +1,43 @@
+1) what is the diffrence b/w synchronous and asynchronous operation?
+ans: Synchronous:Tasks are executed one after another — each task waits for the previous one to finish.
+Asynchronous:Tasks can be executed independently — the program doesn’t wait for one task to complete before moving to the next.
+
+2) what is dom?
+ans:Document Object Model(dom) is a programming interface provided by browser, it allows javasctipt to access and manipulate the structure, style and content of the webpage.
+3) what are the data types in js?
+ans: primitive data types and non-primitive data types
+ primitive- that are immutabale means no changes and stores single value.
+ Data types are =>
+ string - "mufeedha", 'mufeedha'
+ number- 1,2,3,4,5
+ boolean- true or false value
+ undefined- not defined
+ null- absence of value
+ symbol- unique value
+
+ non primitive are mutable means we can change
+ Array and Object
+ Object: Stores data in key–value pairs.
+ Array: Stores data in an ordered list (index-based).
+4) what is the event in js?
+ans: events is an action or occurence that happens in the browser.
+5) what are closure in js?
+closure - it has outer function & inner function after the execution the inner function can access the variables, methods etc from outer function
+6) what is the diffrence b/w map and forEach?
+ans: Transform each elements and returns new array
+7) what is the callBack function in js?
+8) what is inheritance in js?
+9) what is the purpose of trycatch statement in js?
+10) what is the purpose of addEventListener method in js?
+11) what is the diffrence b/w query selector all?
+12) what is the diffrence b/w null and undefined?
+13) what is the diffrence b/w == and ===
+14) what is hoisting in js?
+15) what is the 'this' keyword in js?
+16) what are the diffrent ways to define a function in js?
+17) what is the purpose of let,var,const?
+18) what is the diffrence b/w primitive and non-primitive data types?
+19) what is the use of spread operator in js?
+20) what is ternary operator in js?
+21) what is rest perameter?
+22) access,iteration,mutator methods?
