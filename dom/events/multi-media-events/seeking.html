@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seeking Events Example</title>
+</head>
+<body>
+  <h2>Multimedia Events: seeking & seeked</h2>
+
+  <audio id="audioplayer" controls>
+    <source src="./ayyan.mp3" type="audio/mp3">
+  </audio>
+
+  <p id="eventOutput">Event will appear here</p>
+
+  <script>
+    const audio = document.getElementById("audioplayer");
+    const output = document.getElementById("eventOutput");
+
+     
+    // seeking event - when user starts moving playhead
+    audio.addEventListener('seeking', () => {
+      output.textContent = "Seeking event fired";
+      console.log("seeking event fired");
+    });
+
+    // seeked event - when user finishes seeking
+    audio.addEventListener('seeked', () => {
+      output.textContent = "Seeked event fired";
+      console.log("seeked event fired");
+    });
+  </script>
+</body>
+</html>

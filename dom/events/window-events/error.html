@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Event</title>
+</head>
+<body>
+    <h2>Error Event</h2>
+    <p id="msg">Click the button to trigger an error.</p>
+    <button id="btn">Cause Error</button>
+
+    <script>
+        window.addEventListener("error", (e) => {
+            document.getElementById("msg").textContent = "An error occurred: " + e.message;
+        });
+
+        document.getElementById("btn").addEventListener("click", () => {
+            nonExistentFunction(); // this will trigger an error
+        });
+    </script>
+</body>
+</html>
