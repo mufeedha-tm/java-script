@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <h2>Contact form</h2>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="your name" required>
+            <input type="email" name="email" placeholder="your email" required>
+            <input type="text" name="title" placeholder="your title" required>
+            <textarea name="message" placeholder="your message" required></textarea>
+            <button type="submit">Send message</button>
+        </form>
+
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+
+        <script>
+            //initialize emailjs
+
+            (function () {
+                emailjs.init("3iAeoL60gUcpim-J4")  //public key
+            })();
+
+            //handle form submit
+            document.getElementById("contact-form").addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                emailjs.sendForm("service_naa1ncy", "template_bv2urwt", this)
+                    .then(function () {
+                        alert("Message send successfully,")
+                    }, function (error) {
+                        alert("Failed to send message")
+
+                    })
+            })
+        </script>
+    </div>
+</body>
+
+</html>
